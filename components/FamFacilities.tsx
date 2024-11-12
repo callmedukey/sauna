@@ -1,0 +1,99 @@
+"use client";
+
+import Image from "next/image";
+import Link from "next/link";
+
+import CarouselFam from "./CarouselFam";
+
+export default function FamFacilities() {
+  return (
+    <main className=" flex flex-col bg-white py-6">
+      
+      {/* Título Principal */}
+      <div className="flex flex-col items-center">
+        <h1 className="mb-4 text-center text-[20px] font-semibold sm:text-[24px] md:text-[30px] lg:text-[30px] xl:text-[30px]">
+          솔로 사우나 레포만의 시설 안내
+        </h1>
+
+        {/* Navegação em Abas */}
+        <nav className="mb-8 flex flex-nowrap items-center space-x-8 p-2">
+          <Link href="/women-room" passHref>
+            <span className="cursor-pointer pb-2 text-lg text-gray-500 hover:text-black">
+              여성 룸
+            </span>
+          </Link>
+          <Link href="/men-room" passHref>
+            <span className="cursor-pointer pb-2 text-lg text-gray-500 hover:text-black">
+              남성 룸
+            </span>
+          </Link>
+          <Link href="/family-room" passHref>
+            <span className="cursor-pointer border-black pb-2 text-[18px] font-semibold sm:border-b-2 sm:text-[18px] md:border-b-2 md:text-[20px] lg:border-b-2 lg:text-[24px] xl:border-b-2 xl:text-[24px]">
+              가족 룸
+            </span>
+          </Link>
+          <Link href="/powder-room" passHref>
+            <span className="cursor-pointer pb-2 text-lg text-gray-500 hover:text-black">
+              파우더 룸
+            </span>
+          </Link>
+        </nav>
+      </div>
+
+      {/* Seção do Carrossel */}
+      <section className="mb-6 px-2">
+        <CarouselFam />
+      </section>
+
+      {/* Descrição */}
+      <div className=" flex flex-col items-center px-2">
+        <section className="max-w-2xl">
+          <h2 className="mb-4 text-center text-xl font-semibold">
+            가족 룸  ]
+          </h2>
+          <p className="mb-4 leading-relaxed text-gray-700">
+          여유로운 핀란드식 대형 사우나를 갖추고 있어, 보다 넓고 편안한 공간에서 많은 인원이 함께 즐
+길 수 있는 최적의 환경을 제공합니다. 여성 룸과 남성 룸을 연결하여, 가족 단위가 프라이빗하게
+함께 할 수 있는 독립된 공간에서 진정한 가족 사우나의 즐거움을 만끽하실 수 있습니다.
+<br /><br />
+
+
+지친 몸과 마음의 스트레스를 풀고, 가족과 함께 힐링의 시간을 보내며, 따듯한 사우나와 함께 편
+안한 휴식을 취할 수 있는 특별한 공간입니다. 자연과 어우러진 인테리어와 함께, 더욱 안락하고
+평온한 시간을 보내시기 바랍니다.
+          </p>
+        </section>
+      </div>
+
+      {/* Seção de Itens - 실내 구비 품목 */}
+      <section className="mx-0 mt-8 w-full bg-gray-100 px-2 py-8">
+        <h3 className="mb-4 text-center text-lg font-semibold">실내 구비 품목</h3>
+        <div className=" flex justify-center px-2">
+          <Image
+            src="/Table1.png"
+            alt="실내 구비 품목"
+            width={700} // Ajuste o tamanho conforme necessário
+            height={300}
+            className=""
+          />
+        </div>
+      </section>
+
+      {/* Seção de Itens - 1인 제공 품목 */}
+      <section className=" bg-white px-2 py-8">
+        <h3 className="mb-4 text-center text-lg font-semibold">1인 제공 품목</h3>
+        <p className="mb-8 text-center text-[12px]">
+            상황에 따라 제공품은 변동될 수 있습니다.</p>
+        <div className="flex justify-center">
+          <Image
+            src="/Table2.png"
+            alt="1인 제공 품목"
+            width={700} // Ajuste o tamanho conforme necessário
+            height={300}
+            className=""
+          />
+        </div>
+      </section>
+    </main>
+  );
+}
