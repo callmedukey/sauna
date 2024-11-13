@@ -4,7 +4,7 @@ import FooterM from "@/components/FooterM";
 import NavBar from "@/components/NavBar";
 
 
-export default function WomenRoom() {
+export default function BathRoom() {
   return (
     <div >
       <NavBar/>

@@ -4,7 +4,7 @@ import HowToDo from "@/components/HowToDo";
 import NavBar from "@/components/NavBar";
 
 
-export default function WomenRoom() {
+export default function HowTo() {
   return (
     <div >
       <NavBar/>

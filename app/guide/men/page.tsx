@@ -4,7 +4,7 @@ import MenFacilities from "@/components/MenFacilities";
 import NavBar from "@/components/NavBar";
 
 
-export default function WomenRoom() {
+export default function MenRoom() {
   return (
     <div >
       <NavBar/>
