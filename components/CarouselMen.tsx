@@ -41,12 +41,12 @@ export default function CarouselMan() {
       <Carousel
         opts={{ loop: true }}
         setApi={setCarouselApi}
-        className="relative w-full max-w-full sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl"
+        className="carouselContainer"
       >
         <CarouselContent className="-ml-4 flex">
           {images.map((src, index) => (
             <CarouselItem key={index} className="flex-col pl-4">
-              <div className="relative h-[250px] w-full sm:h-[300px] md:h-[400px] lg:h-[500px]">
+              <div className="carouselMain">
                 <Image
                   src={src}
                   alt={`Image ${index + 1}`}
@@ -71,7 +71,7 @@ export default function CarouselMan() {
         {images.map((src, index) => (
           <button
             key={index}
-            className="h-10 w-12 sm:h-12 sm:w-16 md:h-16 md:w-20 lg:h-20 lg:w-24"
+            className="thumbButton"
             onClick={() => goToSlide(index)}
           >
             <Image
