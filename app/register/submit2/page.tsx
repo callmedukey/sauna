@@ -1,14 +1,15 @@
 
-import Banner from "@/components/Banner";
+
 import Footer from "@/components/Footer";
 import FooterM from "@/components/FooterM";
 import NavBarW from "@/components/NavBarW";
+import NewUserPage from "@/components/NewUserPage";
 
-export default function Home() {
+export default function NewUser() {
   return (
     <div>
       <NavBarW/>
-      <Banner/>
+      <NewUserPage/>
       <Footer/>
       <FooterM/>
       </div>

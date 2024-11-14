@@ -1,14 +1,15 @@
 
-import Banner from "@/components/Banner";
+
 import Footer from "@/components/Footer";
 import FooterM from "@/components/FooterM";
+import LoginPage from "@/components/LogInPage";
 import NavBarW from "@/components/NavBarW";
 
-export default function Home() {
+export default function Login() {
   return (
     <div>
       <NavBarW/>
-      <Banner/>
+      <LoginPage/>
       <Footer/>
       <FooterM/>
       </div>
