@@ -2,8 +2,10 @@
 import React from "react";
 
 import CarouselDemo from "./CarouselBanner";
+import NewUserForm from "./NewUserForm";
 
-const Banner = () => {
+
+const NewUserPage= () => {
   return (
     <div className="relative h-screen w-full overflow-hidden bg-cover bg-center">
       {/* Carousel as Background */}
@@ -15,6 +17,7 @@ const Banner = () => {
           <h1 className="mb-4 mt-[110px] text-[32px] font-bold">
             나만을 위한 사우나 솔로 사우나 레포
           </h1>
+          <NewUserForm/>
           <p className="mb-6 mt-[20px] text-[16px]">
             국내 최초의 개인 사우나. 프라이빗한 공간에서 본인만의 휴식을
           </p>
@@ -25,6 +28,6 @@ const Banner = () => {
       </div>
     </div>
   );
-};
+}; 
 
-export default Banner;
+export default NewUserPage;

@@ -1,14 +1,15 @@
 
-import Banner from "@/components/Banner";
+
 import Footer from "@/components/Footer";
 import FooterM from "@/components/FooterM";
 import NavBarW from "@/components/NavBarW";
+import RegisterPage from "@/components/RegisterPage";
 
-export default function Home() {
+export default function Submit() {
   return (
     <div>
       <NavBarW/>
-      <Banner/>
+      <RegisterPage/>
       <Footer/>
       <FooterM/>
       </div>
