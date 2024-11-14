@@ -11,7 +11,7 @@ const NavBar = () => {
       <div className="flex items-center justify-between">
         
         {/* Logo */}
-        <div className="ml-[75px] flex items-center">
+        <div className=" flex items-center">
           <Image
             src="/SaunaLogo.png"
             alt="Logo"
@@ -69,7 +69,7 @@ const NavBar = () => {
         </div>
 
         {/* Full Navigation Links for Larger Screens */}
-        <div className="hidden space-x-8 text-[18px] text-gray-800 lg:flex">
+        <div className="hidden space-x-8  text-gray-800 lg:flex lg:text-[15px] xl:text-[18px]">
           <Link href="/intro" className="hover:text-gray-500">솔로사우나 레포 소개</Link>
           <Link href="/guide/women" className="hover:text-gray-500">시설 안내</Link>
           <Link href="/how-to" className="hover:text-gray-500">이용 방법</Link>
@@ -79,7 +79,7 @@ const NavBar = () => {
         </div>
 
         {/* Authentication Links for Larger Screens */}
-        <div className="mr-[75px] hidden space-x-4 text-[18px] text-black lg:flex">
+        <div className=" hidden space-x-4 text-[18px] text-black lg:flex">
           <Link href="/login" className="hover:text-gray-500">로그인</Link>
           <div className='border-l-2 border-l-black '></div>
           <Link href="/register/submit" className="hover:text-gray-500">회원 가입</Link>
