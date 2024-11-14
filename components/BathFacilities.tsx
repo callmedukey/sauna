@@ -17,23 +17,23 @@ export default function BathFacilities() {
 
         {/* Navegação em Abas */}
         <nav className="mb-8 flex flex-nowrap items-center space-x-8 p-2">
-          <Link href="/women-room" passHref>
-            <span className="cursor-pointer pb-2 text-lg text-gray-500 hover:text-black">
+          <Link href="/guide/women" passHref>
+            <span className="noselect-room">
               여성 룸
             </span>
           </Link>
-          <Link href="/men-room" passHref>
-            <span className="cursor-pointer pb-2 text-lg text-gray-500 hover:text-black">
+          <Link href="/guide/men" passHref>
+            <span className="noselect-room">
               남성 룸
             </span>
           </Link>
-          <Link href="/family-room" passHref>
-            <span className="cursor-pointer pb-2 text-lg text-gray-500 hover:text-black">
+          <Link href="/guide/family" passHref>
+            <span className="noselect-room">
               가족 룸
             </span>
           </Link>
-          <Link href="/powder-room" passHref>
-            <span className="cursor-pointer border-black pb-2 text-[18px] font-semibold sm:border-b-2 sm:text-[18px] md:border-b-2 md:text-[20px] lg:border-b-2 lg:text-[24px] xl:border-b-2 xl:text-[24px]">
+          <Link href="/guide/bath" passHref>
+          <span className="select-room">
               파우더 룸
             </span>
           </Link>

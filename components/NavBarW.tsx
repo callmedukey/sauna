@@ -3,11 +3,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 
-const NavBar = () => {
+const NavBarW = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className=" z-10 w-full bg-transparent px-6 py-4">
+    <nav className="absolute z-10 w-full bg-transparent px-6 py-4">
       <div className="flex items-center justify-between">
         
         {/* Logo */}
@@ -17,7 +17,7 @@ const NavBar = () => {
             alt="Logo"
             width={60}
             height={65}
-            className="mr-4 invert"
+            className="mr-4 "
           />
         </div>
 
@@ -25,7 +25,7 @@ const NavBar = () => {
         <div className="relative flex lg:hidden">
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="text-gray-800 focus:outline-none"
+            className=" text-white focus:outline-none"
           >
             {/* Hamburger icon */}
             <svg
@@ -69,7 +69,7 @@ const NavBar = () => {
         </div>
 
         {/* Full Navigation Links for Larger Screens */}
-        <div className="hidden space-x-8 text-[18px] text-gray-800 lg:flex">
+        <div className="hidden space-x-8 text-[18px] text-white lg:flex">
           <Link href="/intro" className="hover:text-gray-500">솔로사우나 레포 소개</Link>
           <Link href="/guide/women" className="hover:text-gray-500">시설 안내</Link>
           <Link href="/how-to" className="hover:text-gray-500">이용 방법</Link>
@@ -79,9 +79,9 @@ const NavBar = () => {
         </div>
 
         {/* Authentication Links for Larger Screens */}
-        <div className="mr-[75px] hidden space-x-4 text-[18px] text-black lg:flex">
+        <div className="mr-[75px] hidden space-x-4 text-[18px] text-white lg:flex">
           <Link href="#login" className="hover:text-gray-500">로그인</Link>
-          <div className='border-l-2 border-l-black '></div>
+          <div className='border-l-2 border-l-white '></div>
           <Link href="#register" className="hover:text-gray-500">회원 가입</Link>
         </div>
       </div>
@@ -89,4 +89,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+export default NavBarW;
