@@ -1,4 +1,3 @@
-// pages/ExamplePage.tsx
 
 import {
     Table,

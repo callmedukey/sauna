@@ -4,7 +4,14 @@ import Link from "next/link";
 import React from "react";
 import { useForm } from "react-hook-form";
 
-import { Form, FormField, FormItem, FormControl, FormMessage } from "@/components/ui/form"; // Ajuste o caminho conforme necessário
+import { registerUserAction } from "@/app/actions/registerUserAction"; // Ajuste o caminho para a action
+import {
+  Form,
+  FormField,
+  FormItem,
+  FormControl,
+  FormMessage,
+} from "@/components/ui/form"; // Ajuste o caminho conforme necessário
 
 type RegisterFormInputs = {
   email: string;
@@ -15,13 +22,28 @@ type RegisterFormInputs = {
 const RegisterForm = () => {
   const form = useForm<RegisterFormInputs>();
 
+  const onSubmit = async (data: RegisterFormInputs) => {
+    const response = await registerUserAction(data);
+
+    if (response.success) {
+      alert("Registration successful!");
+      // Redirecione para a página de login ou dashboard
+      // router.push("/login");
+    } else {
+      alert(response.error || "Registration failed!");
+    }
+  };
+
   return (
     <div className="flex min-h-screen items-center justify-center bg-transparent">
       <div className="m-2 w-full max-w-md space-y-6 rounded-[30px] bg-white px-[60px] py-[70px] shadow-lg">
         <h2 className="mb-[50px] text-center text-[20px] font-semibold text-black">회원 가입</h2>
 
         <Form {...form}>
-          <form className="space-y-6">
+          <form
+            onSubmit={form.handleSubmit(onSubmit)}
+            className="space-y-6 text-black"
+          >
             <FormField
               name="email"
               control={form.control}
@@ -78,7 +100,7 @@ const RegisterForm = () => {
 
             <div className="flex justify-center">
               <button
-                type="button"
+                type="submit"
                 className="min-w-[210px] rounded-[30px] bg-customBege py-3 text-center text-black hover:bg-gray-300 focus:outline-none"
               >
                 다음

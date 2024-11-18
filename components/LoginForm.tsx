@@ -1,10 +1,19 @@
 "use client";
 
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 
-import { Form, FormField, FormItem, FormControl, FormMessage } from "@/components/ui/form"; // Ajuste o caminho conforme necessário
+import { loginUserAction } from "@/app/actions/loginUserAction"; // Ajuste o caminho para a action do servidor
+import {
+  Form,
+  FormField,
+  FormItem,
+  FormControl,
+  FormMessage,
+} from "@/components/ui/form"; // Ajuste o caminho conforme necessário
+
+
 
 type LoginFormInputs = {
   email: string;
@@ -13,14 +22,39 @@ type LoginFormInputs = {
 
 const LoginForm = () => {
   const form = useForm<LoginFormInputs>();
+  const [successMessage, setSuccessMessage] = useState<string | null>(null);
+
+  const onSubmit = async (data: LoginFormInputs) => {
+    const response = await loginUserAction(data);
+
+    if (response.success) {
+      setSuccessMessage("Login successful! Redirecting...");
+      // Você pode redirecionar para outra página após um curto intervalo
+      setTimeout(() => {
+        window.location.href = "/dashboard"; // Redirecione para o dashboard ou outra rota
+      }, 2000);
+    } else {
+      setSuccessMessage(null); // Remove a mensagem de sucesso se o login falhar
+      alert(response.error || "Invalid login credentials");
+    }
+  };
 
   return (
-    <div className=" flex min-h-screen items-center justify-center bg-transparent">
+    <div className="flex min-h-screen items-center justify-center bg-transparent">
       <div className="m-2 w-full max-w-md space-y-6 rounded-[30px] bg-white px-[60px] py-[70px] shadow-lg">
         <h2 className="mb-[50px] text-center text-[20px] font-semibold text-black">로그인</h2>
 
+        {successMessage && (
+          <div className="mb-4 rounded-lg bg-green-100 p-3 text-center text-green-700">
+            {successMessage}
+          </div>
+        )}
+
         <Form {...form}>
-          <form className="space-y-6">
+          <form
+            className="space-y-6 text-black"
+            onSubmit={form.handleSubmit(onSubmit)}
+          >
             <FormField
               name="email"
               control={form.control}
@@ -65,7 +99,7 @@ const LoginForm = () => {
 
             <div className="flex justify-center">
               <button
-                type="button"
+                type="submit"
                 className="min-w-[210px] rounded-[30px] bg-customBege py-3 text-center text-black hover:bg-gray-300 focus:outline-none"
               >
                 로그인
@@ -74,7 +108,7 @@ const LoginForm = () => {
 
             <div className="text-center text-sm text-gray-700">
               계정이 없나요?{" "}
-              <Link href="/register" className=" text-gray-700 underline">
+              <Link href="/register" className="text-gray-700 underline">
                 회원가입
               </Link>
             </div>
