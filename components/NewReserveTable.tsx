@@ -113,10 +113,9 @@ const NewReserveTable = () => {
 
         <div className="mt-6 flex justify-end">
           <Dialog>
-            <DialogTrigger>
-              <button className="rounded bg-black px-6 py-3 text-white hover:bg-gray-800 focus:outline-none">
+            <DialogTrigger className="rounded bg-black px-6 py-3 text-white hover:bg-gray-800 focus:outline-none">
                 네이버 예약 추가
-              </button>
+              
             </DialogTrigger>
             <DialogContent>
               <DialogHeader>

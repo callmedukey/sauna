@@ -1,13 +1,13 @@
 import AdmNavbar from "@/components/AdmNavBar";
-import ReservationTable from "@/components/ReservationTable";
+import AnnouncementTable from "@/components/AnnoucementTable";
 
 
 
-export default function Reserve() {
+export default function Annoucement() {
   return (
     <div className="mt-[50px]">
         <AdmNavbar/>
-        <ReservationTable/>
+        <AnnouncementTable/>
 
       </div>
   );
