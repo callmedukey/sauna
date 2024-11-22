@@ -1,9 +1,9 @@
 
 
-import Footer from "@/components/Footer";
-import FooterM from "@/components/FooterM";
+import Footer from "@/components/Footer/Footer";
+import FooterM from "@/components/Footer/FooterM";
 import LoginPage from "@/components/LogInPage";
-import NavBarW from "@/components/NavBarW";
+import NavBarW from "@/components/Navbar/NavBarW";
 
 export default function Login() {
   return (

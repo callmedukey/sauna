@@ -1,9 +1,5 @@
-"use client";
-
-import React, { useEffect, useState } from "react";
-
-
-import NewReserveForm from "@/components/NewReserveForm";
+import { fetchReservations } from "@/app/actions/fetchReservation";
+import NewReserveForm from "@/components/Form/NewReserveForm";
 import {
   Dialog,
   DialogContent,
@@ -20,40 +16,10 @@ import {
   TableRow,
 } from "@/components/ui/table";
 
-interface Reservation {
-  id: number;
-  name: string;
-  date: string;
-  time: string;
-  reservationNumber: string;
-}
 
-const NewReserveTable = () => {
-  const [reservations, setReservations] = useState<Reservation[]>([]);
+const NewReserveTable = async () => {
+  const reservations = await fetchReservations(); // Use server action to fetch data
 
-  useEffect(() => {
-    async function loadReservations() {
-      try {
-        const response = await fetch("/api/reservations");
-        if (!response.ok) {
-          throw new Error("Falha ao buscar dados");
-        }
-        const data: { id: number; name: string; date: Date; time: string; reservationNumber: string; }[] = await response.json();
-  
-        // Converte 'date' de Date para string
-        const formattedData = data.map(reservation => ({
-          ...reservation,
-          date: new Date(reservation.date).toISOString(), // ou use toLocaleDateString() para formato legível
-        }));
-  
-        setReservations(formattedData); // Define o estado com as datas convertidas para string
-      } catch (error) {
-        console.error("Erro ao carregar reservas:", error);
-      }
-    }
-  
-    loadReservations();
-  }, []);
   return (
     <div className="mx-auto mt-12 w-full max-w-[950px] px-4">
       <h1 className="mb-6 text-start text-xl font-bold sm:text-2xl">네이버 예약</h1>
@@ -114,8 +80,7 @@ const NewReserveTable = () => {
         <div className="mt-6 flex justify-end">
           <Dialog>
             <DialogTrigger className="rounded bg-black px-6 py-3 text-white hover:bg-gray-800 focus:outline-none">
-                네이버 예약 추가
-              
+              네이버 예약 추가
             </DialogTrigger>
             <DialogContent>
               <DialogHeader>

@@ -1,4 +1,4 @@
-import AdmNavbar from "@/components/AdmNavBar";
+import AdmNavbar from "@/components/Navbar/AdmNavBar";
 
 
 

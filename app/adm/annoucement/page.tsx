@@ -1,5 +1,7 @@
-import AdmNavbar from "@/components/AdmNavBar";
-import AnnouncementTable from "@/components/AnnoucementTable";
+import AnnouncementTable from "@/components/AnnouncementTable";
+import AdmNavbar from "@/components/Navbar/AdmNavBar";
+
+
 
 
 

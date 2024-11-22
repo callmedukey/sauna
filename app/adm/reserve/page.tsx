@@ -1,5 +1,5 @@
-import AdmNavbar from "@/components/AdmNavBar";
-import ReservationTable from "@/components/ReservationTable";
+import AdmNavbar from "@/components/Navbar/AdmNavBar";
+import ReservationTable from "@/components/Tables/ReservationTable";
 
 
 

@@ -1,7 +1,7 @@
 
-import Footer from "@/components/Footer";
-import FooterM from "@/components/FooterM";
-import NavBar from "@/components/NavBar";
+import Footer from "@/components/Footer/Footer";
+import FooterM from "@/components/Footer/FooterM";
+import NavBar from "@/components/Navbar/NavBar";
 import TabbedTable from "@/components/TabbedTable";
 
 

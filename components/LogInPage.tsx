@@ -1,7 +1,7 @@
 // components/Banner.tsx
 import React from "react";
 
-import CarouselDemo from "./CarouselBanner";
+import CarouselDemo from "./Carousel/CarouselBanner";
 import LoginForm from "./LoginForm";
 
 const LoginPage = () => {

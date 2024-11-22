@@ -1,8 +1,8 @@
 
-import Footer from "@/components/Footer";
-import FooterM from "@/components/FooterM";
+import Footer from "@/components/Footer/Footer";
+import FooterM from "@/components/Footer/FooterM";
 import IntroSauna from "@/components/IntroSauna";
-import NavBar from "@/components/NavBar";
+import NavBar from "@/components/Navbar/NavBar";
 
 
 export default function Intro() {

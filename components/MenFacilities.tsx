@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 
-import CarouselMan from "./CarouselMen";
+import CarouselMan from "./Carousel/CarouselMen";
 
 export default function MenFacilities() {
   return (
