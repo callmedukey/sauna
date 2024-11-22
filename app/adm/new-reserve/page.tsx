@@ -1,13 +1,12 @@
 import AdmNavbar from "@/components/AdmNavBar";
-import ReservationTable from "@/components/ReservationTable";
+import NewReserveTable from "@/components/NewReserveTable";
 
 
-
-export default function Reserve() {
+export default function NewReserve() {
   return (
     <div className="mt-[50px]">
         <AdmNavbar/>
-        <ReservationTable/>
+        <NewReserveTable/>
 
       </div>
   );

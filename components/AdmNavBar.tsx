@@ -15,7 +15,7 @@ const AdmNavbar = () => {
         </li>
         <li>
           <Link
-            href="#"
+            href="/adm/new-reserve"
             className="border border-white bg-black px-4 py-2 text-white transition hover:bg-gray-800"
           >
             네이버 예약
@@ -23,7 +23,7 @@ const AdmNavbar = () => {
         </li>
         <li>
           <Link
-            href="#"
+            href="/adm/all-reserve"
             className="border border-white bg-black px-4 py-2 text-white transition hover:bg-gray-800"
           >
             내역
@@ -31,7 +31,7 @@ const AdmNavbar = () => {
         </li>
         <li>
           <Link
-            href="#"
+            href="/adm/member-manage"
             className="border border-white bg-black px-4 py-2 text-white transition hover:bg-gray-800"
           >
             회원 관리
@@ -39,7 +39,7 @@ const AdmNavbar = () => {
         </li>
         <li>
           <Link
-            href="#"
+            href="/adm/annoucement"
             className="border border-white bg-black px-4 py-2 text-white transition hover:bg-gray-800"
           >
             공지 사항
@@ -47,7 +47,7 @@ const AdmNavbar = () => {
         </li>
         <li>
           <Link
-            href="#"
+            href="/adm/inquires"
             className="border border-white bg-black px-4 py-2 text-white transition hover:bg-gray-800"
           >
             컨텐츠
@@ -55,7 +55,7 @@ const AdmNavbar = () => {
         </li>
         <li>
           <Link
-            href="#"
+            href="/adm/calendar"
             className="border border-white bg-black px-4 py-2 text-white transition hover:bg-gray-800"
           >
             캘린더
