@@ -1,8 +1,8 @@
 // components/Banner.tsx
 import React from "react";
 
-import CarouselDemo from "./CarouselBanner";
-import NewUserForm from "./NewUserForm";
+import CarouselDemo from "./Carousel/CarouselBanner";
+import NewUserForm from "./Form/NewUserForm";
 
 
 const NewUserPage= () => {

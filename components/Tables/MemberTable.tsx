@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 
-import PointEditForm from "@/components/PointEditForm"; // Adjust the path to your form
+import PointEditForm from "@/components/Form/PointEditForm"; // Adjust the path to your form
 import {
   Dialog,
   DialogContent,

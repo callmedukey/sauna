@@ -1,5 +1,5 @@
-import AdmNavbar from "@/components/AdmNavBar";
-import NewReserveTable from "@/components/NewReserveTable";
+import AdmNavbar from "@/components/Navbar/AdmNavBar";
+import NewReserveTable from "@/components/Tables/NewReserveTable";
 
 
 export default function NewReserve() {

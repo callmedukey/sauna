@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import CarouselFam from "./CarouselFam";
+import CarouselFam from "./Carousel/CarouselFam";
 
 export default function FamFacilities() {
   return (

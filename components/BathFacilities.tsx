@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import CarouselBath from "./CarouselBath";
+import CarouselBath from "./Carousel/CarouselBath";
 
 export default function BathFacilities() {
   return (

@@ -11,14 +11,14 @@ import {
   } from "@/components/ui/table";
   import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
-import ReservationForm from "./ReservationForm";
+import ReservationForm from "./Form/ReservationForm";
 
   
 
   
   export default function TabbedTable() {
     return (
-      <div className="mx-auto px-4 sm:px-8">
+      <div className="mx-auto min-h-[550px] px-4 sm:px-8">
         <Tabs defaultValue="account-info" className="my-8 sm:my-[115px] xl:my-[125px]">
           <TabsList className="flex flex-wrap justify-center gap-[20px] bg-white  sm:flex-row sm:gap-[50px] md:gap-[100px] lg:gap-[150px] xl:gap-[150px]">
             <TabsTrigger value="account-info" className="text-base sm:text-lg lg:text-[24px]">

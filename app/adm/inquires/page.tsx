@@ -1,5 +1,5 @@
-import AdmNavbar from "@/components/AdmNavBar";
-import InquiresTable from "@/components/InquiresTable";
+import AdmNavbar from "@/components/Navbar/AdmNavBar";
+import InquiresTable from "@/components/Tables/InquiresTable";
 
 
 
