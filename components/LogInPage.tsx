@@ -2,7 +2,7 @@
 import React from "react";
 
 import CarouselDemo from "./Carousel/CarouselBanner";
-import LoginForm from "./LoginForm";
+import LoginForm from "./Form/LoginForm";
 
 const LoginPage = () => {
   return (

@@ -22,14 +22,14 @@ const Footer = () => {
           <p>대표:김민정
           </p>
          <div className=''> 
-          <p className=''>사업자등록번호:618-13-36099 <span>|</span> 통신판매업신고번호: 2024-서울동작-0979 </p> 
+          <p className=''>사업자등록번호:618-13-36099 <span className='mx-5 text-[20px]'>|</span> 통신판매업신고번호: 2024-서울동작-0979 </p> 
           <p>주소:서울특별시 동작구 노들로 2길 7, 드림스퀘어 A동 206호
           </p>
           <p>E-MAIL: solosauna.lepo24@naver.com</p>
           </div>
           <div className="flex space-x-4">
             <p className="text-customGray">개인정보처리방침</p>
-            <span>|</span>
+            <span className='mx-5 text-[20px] text-customGray'>|</span>
             <p className="text-customGray">이용약관</p>
           </div>
           </div>

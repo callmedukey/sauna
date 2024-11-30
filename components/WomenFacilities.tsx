@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import CarouselWomen from "./CarouselWomen";
+import CarouselWomen from "./Carousel/CarouselWomen";
 
 export default function WomenFacilities() {
   return (
@@ -48,7 +48,7 @@ export default function WomenFacilities() {
       {/* Descrição */}
       <div className="flex flex-col items-center px-2">
         <section className="max-w-2xl">
-          <h2 className="mb-4 text-center text-xl font-semibold">남성 룸</h2>
+          <h2 className="my-[50px] text-center text-[22px] font-semibold">남성 룸</h2>
           <p className="mb-4 leading-relaxed text-gray-700">
           1인 또는 3인이 이용할 수 있는 욕조 타입 룸으로
 가족, 지인, 친구와 함께 [우리만의 프라이빗한 공간] 에서 지친 몸과 마음의 스트레스를 풀고, 일상 속에 힐링을 공유하며,
@@ -65,7 +65,7 @@ export default function WomenFacilities() {
 
       {/* Seção de Itens - 실내 구비 품목 */}
       <section className="mx-0 mt-8 w-full bg-gray-100 px-0 py-8">
-        <h3 className="mb-4 text-center text-lg font-semibold">실내 구비 품목</h3>
+        <h3 className="mb-4 text-center text-[22px] font-semibold">실내 구비 품목</h3>
         <div className="flex justify-center px-2">
           <Image
             src="/Table1.png"
@@ -79,8 +79,8 @@ export default function WomenFacilities() {
 
       {/* Seção de Itens - 1인 제공 품목 */}
       <section className=" bg-white py-8">
-        <h3 className="mb-4 text-center text-lg font-semibold">1인 제공 품목</h3>
-        <p className="mb-8 text-center text-[12px]">
+        <h3 className="mb-4 text-center text-[22px] font-semibold">1인 제공 품목</h3>
+        <p className="mb-8 text-center text-[16px]">
             상황에 따라 제공품은 변동될 수 있습니다.</p>
         <div className="flex justify-center px-2">
           <Image

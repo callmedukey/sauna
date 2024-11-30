@@ -48,7 +48,7 @@ export default function BathFacilities() {
       {/* Descrição */}
       <div className=" flex flex-col items-center px-2">
         <section className="max-w-2xl">
-          <h2 className="mb-4 text-center text-xl font-semibold">
+          <h2 className="my-[50px] text-center text-[22px] font-semibold">
           파우더 룸
           </h2>
           <p className="mb-4 text-center leading-relaxed text-gray-700">
@@ -62,7 +62,7 @@ export default function BathFacilities() {
 
       {/* Seção de Itens - 실내 구비 품목 */}
       <section className="mx-0 mt-8 w-full bg-gray-100 px-2 py-8">
-        <h3 className="mb-4 text-center text-lg font-semibold">실내 구비 품목</h3>
+        <h3 className="mb-4 text-center text-[22px] font-semibold">실내 구비 품목</h3>
         <div className=" flex justify-center px-2">
           <Image
             src="/Table3.png"

@@ -49,7 +49,7 @@ export default function MenFacilities() {
       {/* Descrição */}
       <div className=" flex flex-col items-center px-2">
         <section className="max-w-2xl">
-          <h2 className="mb-4 text-center text-xl font-semibold">여성 룸</h2>
+          <h2 className="my-[50px] text-center text-[22px] font-semibold">여성 룸</h2>
           <p className="mb-4 leading-relaxed text-gray-700">
             1인 또는 3인이 이용할 수 있는 혼자 또는 타인과 이용하는 가족, 지인, 친구와 함께
             (온라인의 프라이빗 공간) 에서 자신의 몸과 마음의 스트레스를 풀고, 일상 속의 일탈을 공유하며, 몸과 마음을 재충전할 수 있는 포근하고 따뜻한 공간입니다.
@@ -64,7 +64,7 @@ export default function MenFacilities() {
 
       {/* Seção de Itens - 실내 구비 품목 */}
       <section className="mx-0 mt-8 w-full bg-gray-100 px-0 py-8">
-        <h3 className="mb-4 text-center text-lg font-semibold">실내 구비 품목</h3>
+        <h3 className="mb-4 text-center text-[22px] font-semibold">실내 구비 품목</h3>
         <div className=" flex justify-center px-2">
           <Image
             src="/Table1.png"
@@ -78,8 +78,8 @@ export default function MenFacilities() {
 
       {/* Seção de Itens - 1인 제공 품목 */}
       <section className=" bg-white px-2 py-8">
-        <h3 className="mb-4 text-center text-lg font-semibold">1인 제공 품목</h3>
-        <p className="mb-8 text-center text-[12px]">
+        <h3 className="mb-4 text-center text-[22px] font-semibold">1인 제공 품목</h3>
+        <p className="mb-8 text-center text-[16px]">
             상황에 따라 제공품은 변동될 수 있습니다.</p>
         <div className="flex justify-center">
           <Image

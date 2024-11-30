@@ -72,7 +72,7 @@ body {
 }
 
 .text-container {
-  @apply mx-1 md:w-1/2 lg:w-1/2 lg:pr-1 xl:w-1/2 xl:pr-1;
+  @apply mx-1 md:w-1/2 lg:w-1/2 p-[40px]  xl:w-1/2 ;
 }
 
 .right-row {
@@ -92,7 +92,7 @@ body {
 }
 
 .paragraph-row {
-  @apply text-[16px];
+  @apply text-[14px];
 }
 
 .select-room {

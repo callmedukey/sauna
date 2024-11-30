@@ -22,7 +22,7 @@ const NavBarW = () => {
         </div>
 
         {/* Hamburger Menu for Small Screens */}
-        <div className="relative flex lg:hidden">
+        <div className="relative top-0 flex lg:hidden">
           <button
             onClick={() => setIsOpen(!isOpen)}
             className=" text-white focus:outline-none"
@@ -46,24 +46,25 @@ const NavBarW = () => {
 
           {/* Mobile Menu */}
           {isOpen && (
-            <div className="absolute right-0 mt-2 w-48 origin-top-right space-y-4 rounded-lg bg-white p-4 text-[16px] text-gray-800 shadow-lg transition-transform">
+            <div className="absolute right-0  m-4 min-h-full min-w-[400px] origin-top-right space-y-[50px] rounded-lg bg-white pb-[45px] text-[16px] text-gray-800 shadow-lg transition-transform">
               {/* Authentication Links at the Top */}
-              <div className="flex justify-between">
+              <div className='m-0 bg-customBege p-5'>
+              <div className="flex  gap-[15px] bg-customBege">
                 <Link href="/login" className="hover:text-gray-500">로그인</Link>
                 <span className="text-black">|</span>
                 <Link href="/register/submit" className="hover:text-gray-500">회원 가입</Link>
               </div>
+            
               
-              {/* Divider */}
-              <div className="my-4 border-t border-gray-300"></div>
+              </div>
 
               {/* Navigation Links in Specified Order */}
-              <Link href="/intro" className="block  hover:text-gray-500">솔로사우나 레포 소개</Link>
-              <Link href="/guide/women" className="block hover:text-gray-500">시설 안내</Link>
-              <Link href="/how-to" className="block hover:text-gray-500">이용 방법</Link>
-              <Link href="/comunity" className="block hover:text-gray-500">커뮤니티</Link>
-              <Link href="/directions" className="block hover:text-gray-500">오시는 길</Link>
-              <Link href="/reserve" className="block hover:text-gray-500">예약하기</Link>
+              <Link href="/intro" className="ml-5 block  hover:text-gray-500">솔로사우나 레포 소개</Link>
+              <Link href="/guide/women" className="ml-5 block hover:text-gray-500">시설 안내</Link>
+              <Link href="/how-to" className="ml-5 block hover:text-gray-500">이용 방법</Link>
+              <Link href="/comunity" className="ml-5 block hover:text-gray-500">커뮤니티</Link>
+              <Link href="/directions" className="ml-5 block hover:text-gray-500">오시는 길</Link>
+              <Link href="/reserve" className=" ml-5 block hover:text-gray-500">예약하기</Link>
             </div>
           )}
         </div>

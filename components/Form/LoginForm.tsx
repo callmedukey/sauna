@@ -41,7 +41,7 @@ const LoginForm = () => {
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-transparent">
-      <div className="m-2 w-full max-w-md space-y-6 rounded-[30px] bg-white px-[60px] py-[70px] shadow-lg">
+      <div className="m-2 w-full max-w-[800px] space-y-6 rounded-[30px] bg-white px-[60px] py-[100px] shadow-lg">
         <h2 className="mb-[50px] text-center text-[20px] font-semibold text-black">로그인</h2>
 
         {successMessage && (
@@ -65,7 +65,7 @@ const LoginForm = () => {
                       type="email"
                       placeholder="이메일"
                       {...field}
-                      className="w-full border-b border-gray-300 px-3 py-2 text-[14px] focus:border-gray-600 focus:outline-none"
+                      className="w-full min-w-[400px] border-b border-gray-300 px-3 py-2 text-[14px] focus:border-gray-600 focus:outline-none"
                     />
                   </FormControl>
                   <FormMessage />

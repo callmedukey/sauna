@@ -36,7 +36,7 @@ const RegisterForm = () => {
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-transparent">
-      <div className="m-2 w-full max-w-md space-y-6 rounded-[30px] bg-white px-[60px] py-[70px] shadow-lg">
+      <div className="m-2 w-full max-w-[800px] space-y-6 rounded-[30px] bg-white px-[50px] py-[100px] shadow-lg">
         <h2 className="mb-[50px] text-center text-[20px] font-semibold text-black">회원 가입</h2>
 
         <Form {...form}>
@@ -72,7 +72,7 @@ const RegisterForm = () => {
                       type="password"
                       placeholder="비밀번호"
                       {...field}
-                      className="w-full border-b border-gray-300 px-3 py-2 text-[14px] focus:border-gray-600 focus:outline-none"
+                      className="w-full min-w-[500px] border-b border-gray-300 px-3 py-2 text-[14px] focus:border-gray-600 focus:outline-none"
                     />
                   </FormControl>
                   <FormMessage />
@@ -90,7 +90,7 @@ const RegisterForm = () => {
                       type="password"
                       placeholder="비밀번호 확인"
                       {...field}
-                      className="w-full border-b border-gray-300 px-3 py-2 text-[14px] focus:border-gray-600 focus:outline-none"
+                      className="w-full min-w-[500px] border-b border-gray-300 px-3 py-2 text-[14px] focus:border-gray-600 focus:outline-none"
                     />
                   </FormControl>
                   <FormMessage />

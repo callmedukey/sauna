@@ -48,7 +48,7 @@ export default function FamFacilities() {
       {/* Descrição */}
       <div className=" flex flex-col items-center px-2">
         <section className="max-w-2xl">
-          <h2 className="mb-4 text-center text-xl font-semibold">
+          <h2 className="my-[50px] text-center text-[22px] font-semibold">
             가족 룸  ]
           </h2>
           <p className="mb-4 leading-relaxed text-gray-700">
@@ -67,7 +67,7 @@ export default function FamFacilities() {
 
       {/* Seção de Itens - 실내 구비 품목 */}
       <section className="mx-0 mt-8 w-full bg-gray-100 px-2 py-8">
-        <h3 className="mb-4 text-center text-lg font-semibold">실내 구비 품목</h3>
+        <h3 className="mb-4 text-center text-[22px] font-semibold">실내 구비 품목</h3>
         <div className=" flex justify-center px-2">
           <Image
             src="/Table1.png"
@@ -81,8 +81,8 @@ export default function FamFacilities() {
 
       {/* Seção de Itens - 1인 제공 품목 */}
       <section className=" bg-white px-2 py-8">
-        <h3 className="mb-4 text-center text-lg font-semibold">1인 제공 품목</h3>
-        <p className="mb-8 text-center text-[12px]">
+        <h3 className="mb-4 text-center text-[22px] font-semibold">1인 제공 품목</h3>
+        <p className="mb-8 text-center text-[16x]">
             상황에 따라 제공품은 변동될 수 있습니다.</p>
         <div className="flex justify-center">
           <Image

@@ -116,7 +116,7 @@
                       <input
                         type="password"
                         {...field}
-                        className="w-full max-w-[250px] border-b border-gray-300 bg-transparent px-1 py-2 text-[14px] focus:border-gray-600 focus:outline-none"
+                        className="w-full max-w-[300px] border-b border-gray-300 bg-transparent p-1 text-[14px] focus:border-gray-600 focus:outline-none"
                       />
                     </FormControl>
                     <FormMessage />
