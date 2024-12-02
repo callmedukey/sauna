@@ -46,7 +46,7 @@ const NavBarW = () => {
 
           {/* Mobile Menu */}
           {isOpen && (
-            <div className="absolute right-0  m-4 min-h-full min-w-[400px] origin-top-right space-y-[50px] rounded-lg bg-white pb-[45px] text-[16px] text-gray-800 shadow-lg transition-transform">
+            <div className="absolute right-[-200%]  top-[-230%] m-4 min-h-full min-w-[400px] origin-top-right space-y-[50px] rounded-lg bg-white pb-[45px] text-[16px] text-gray-800 shadow-lg transition-transform">
               {/* Authentication Links at the Top */}
               <div className='m-0 bg-customBege p-5'>
               <div className="flex  gap-[15px] bg-customBege">
